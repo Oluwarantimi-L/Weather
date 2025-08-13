@@ -1,0 +1,8 @@
+body{
+    background: hsl(257, 78%, 98%);
+}
+.wrapper{
+    text-align: center;
+    max-width: 600px;
+    background-color: hsl(0, 0%, 100%);
+}
