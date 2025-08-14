@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Enter a city..."
             required
-            class="search-form__input"
+            class="search-form__input" id="search-form__input"
           />
           <input type="submit" value="Search" class="search-form__submit" />
         </form>
@@ -22,7 +23,7 @@
       <main>
         <div class="weather">
         <div>
-          <h2 class="weather__city">San Francisco</h2>
+          <h2 class="weather__city" id="weather__city">San Francisco</h2>
           <p class="weather__details">
             Tuesday 22:15, broken clouds<br />
             Humidity: <strong>74%</strong>, Wind: <strong>8.75km/h</strong>
